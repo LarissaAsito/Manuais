@@ -1,0 +1,476 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button ion-button icon-only class="botaoHeader" (click)="goToTbhivSubtitulos()"> 
+          <ion-icon name="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Guia TB/HIV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding [ngStyle]="{'font-size': fontSize + 'px', 'background-color': backgroundColor, 'color': fontColor }">
+    <p class="titulo_h2">Tratamento da tuberculose ativa</p>
+    <p>
+      <!-- &ensp; ocupa o tamanho de dois espaços normais. -->
+      &ensp; Em pacientes virgens de ARV, o tratamento da TB ativa sempre precede o início da TARV.
+    </p>
+
+    <p> 
+      &ensp; Para pacientes em uso de antirretrovirais no momento do diagnóstico da TB, a TARV não deve ser interrompida,
+      e sim apenas ajustada, quando necessário. 
+    </p>
+
+    <p class="texto_negrito"> 
+      &ensp; Esquemas para tratamento de TB, doses e efeitos adversos
+    </p>
+
+    <p>
+      &ensp; Para Mtb sabidamente sensível à rifampicina, diagnosticada pelo TRM-TB ou na ausência deste exame, os esquemas 
+      de TB devem preferencialmente contemplar o uso de rifamicinas (rifampicina ou rifabutina).
+    </p>
+
+    <p> 
+      &ensp; Idealmente, o tratamento da TB deve ser feito com esquema básico, utilizando-se os comprimidos combinados de 
+      rifampicina, isoniazida, pirazinamida e etambutol (RHZE). Observar sempre ajuste da dose conforme peso do 
+      paciente.
+    </p>
+
+
+
+    <!-- TABELA 1 -->
+    <h2> QUADRO 1 </h2>
+<p>Quadro 1 - Esquemas básicos com rifampicina para tratamento da tuberculose em adultos e adolescentes (>10 anos de idade)</p>
+
+<ion-grid>
+
+	<ion-row>
+		<ion-col class="col"><strong>Regime:<br>2 RHZE<br>Fase Intensiva</strong></ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col"><strong>Fármacos</strong></ion-col>
+		<ion-col class="conteudo">RHZE<br>150/75/400/275<br>comprimido em dose fixa combinada</ion-col>
+	</ion-row>
+
+	<ion-row>
+			<ion-col class="col"><strong>Unidade/dose para cada faixa de peso</strong></ion-col>
+			<ion-col class="conteudo"><div>20 kg a 35 kg:<br> 2 comprimidos<br><br>36 kg a 50 kg:<br> 3 comprimidos<br><br> > 50 kg:<br>4 comprimidos</div></ion-col>
+	</ion-row>
+	
+	<ion-row>
+			<ion-col class="col"><strong>Meses : 2</strong></ion-col>
+	</ion-row>
+
+</ion-grid>
+
+<br>
+<br>
+
+<ion-grid>
+		
+			<ion-row>
+				<ion-col class="col"><strong>Regime:<br>4 RHZE<br>Fase de Manutenção</strong></ion-col>
+			</ion-row>
+		
+			<ion-row>
+				<ion-col class="col"><strong>Fármacos</strong></ion-col>
+				<ion-col class="conteudo">RH<br>comprimido ou cápsula de 300/200 mg ou 150/100 mg ou comprimidos de 150/75* mg</ion-col>
+			</ion-row>
+		
+			<ion-row>
+					<ion-col class="col"><strong>Unidade/dose para cada faixa de peso</strong></ion-col>
+					<ion-col class="conteudo"><div>20 kg a 35 kg:<br> 1 comprimido ou cápsula de 300/200 mg ou 2 comprimidos de 150/75*<br><br>36 kg a 50 kg:<br> 1 comprimido ou cápsula de 300/200 mg + 1 comprimidos ou cápsula de 150/100 mg ou 3 comprimidos de 150/75*<br><br> > 50 kg:<br>1 comprimido ou cápsula de 300/200 mg ou 4 comprimidos de 150/75*</div></ion-col>
+			</ion-row>
+			
+			<ion-row>
+					<ion-col class="col"><strong>Meses : 4</strong></ion-col>
+			</ion-row>
+		
+</ion-grid>
+
+<p>*Isoniazida - 10 mg/kg/dia, dose máxima de 300 mg/dia; pirazinamida - 35 mg/kg/dia, dose máxima de 1.500 mg/dia; etambutol - 25</p>
+
+
+<!-- FIM DA TABELA 1 -->
+
+    <p>
+      &ensp; Para os pacientes que estiverem em uso de inibidores de protease (IP), a rifabutina deve substituir a 
+      rifampicina:
+    </p>
+
+
+
+    <!-- 	TABELA 2  -->
+    <h2> QUADRO 2 </h2>
+
+	<p>Quadro 2 - Esquema básico com rifabutina para tratamento da tuberculose em adultos e adolescentes (>10 anos de idade)</p>
+  
+      <ion-grid>
+  
+        <ion-row>
+          <ion-col class="col"><strong>Fase Intensiva (2 meses)</strong></ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col class="col"><strong>Rifabutina<br>150 mg</strong></ion-col>
+          <ion-col class="conteudo">
+            <ion-row class="conteudo"><ion-col class="subcol">20 kg-35 kg:<br>1 cápsula</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">36 kg-50 kg:<br>1 cápsula</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">>50 kg:<br>1 cápsula</ion-col></ion-row>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+        <ion-col class="col"><strong>Isoniazida<br>100 mg*</strong></ion-col>
+          <ion-col class="conteudo">
+            <ion-row class="conteudo"><ion-col class="subcol">20 kg-35 kg:<br>2 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">36 kg-50 kg:<br>2 a 3 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">>50 kg:<br>3 comprimidos</ion-col></ion-row>
+          </ion-col>
+        </ion-row>
+  
+        <ion-row>
+        <ion-col class="col"><strong>Pirazinamida<br>500 mg*</strong></ion-col>
+          <ion-col class="conteudo">
+            <ion-row class="conteudo"><ion-col class="subcol">20 kg-35 kg:<br>2 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">36 kg-50 kg:<br>2 a 3 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">>50 kg:<br>3 comprimidos</ion-col></ion-row>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+        <ion-col class="col"><strong>Etambutol<br>400 mg*</strong></ion-col>
+          <ion-col class="conteudo">
+            <ion-row class="conteudo"><ion-col class="subcol">20 kg-35 kg:<br>1 a 2 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">36 kg-50 kg:<br>2 a 3 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">>50 kg:<br>3 comprimidos</ion-col></ion-row>
+          </ion-col>
+        </ion-row>
+  
+      </ion-grid>
+  
+      <br>
+      <br>
+  
+      <ion-grid>
+  
+        <ion-row>
+          <ion-col class="col"><strong>Fase de Manutenção (4 meses)</strong></ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col class="col"><strong>Rifabutina<br>150 mg</strong></ion-col>
+          <ion-col class="conteudo">
+            <ion-row class="conteudo"><ion-col class="subcol">20 kg-35 kg:<br>1 cápsula</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">36 kg-50 kg:<br>1 cápsula</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">>50 kg:<br>1 cápsula</ion-col></ion-row>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+        <ion-col class="col"><strong>Isoniazida<br>100 mg*</strong></ion-col>
+          <ion-col class="conteudo">
+            <ion-row class="conteudo"><ion-col class="subcol">20 kg-35 kg:<br>2 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">36 kg-50 kg:<br>2 a 3 comprimidos</ion-col></ion-row>
+            <ion-row class="conteudo"><ion-col class="subcol">>50 kg:<br>3 comprimidos</ion-col></ion-row>
+          </ion-col>
+        </ion-row>
+  
+      </ion-grid>
+  
+    <p>*Isoniazida - 10 mg/kg/dia, dose máxima de 300 mg/dia; pirazinamida - 35 mg/kg/dia, dose máxima de 1.500 mg/dia; etambutol - 25</p>
+  
+  <!-- FIM DA TABELA 2 -->
+    <!-- Acrescentar a tabela aqui -->
+
+    <p>
+      &ensp; Para o tratamento de meningoencefalite tuberculosa, recomenda-se ainda a associação de corticosteróide ao 
+      esquema antiTB: prednisona oral (1 -2 mg/kg /dia) por quatro semanas ou dexametasona intravenoso nos casos 
+      graves (0.3 a 0.4 mg/kg/dia), por quatro a oito semanas, com redução gradual da dose nas quatro semanas 
+      subsequentes. Além disso, a fase de manutenção deve ser estendida para 07 meses, perfazendo o total de 09 meses 
+      de tratamento.
+    </p>
+
+    <p>
+      &ensp; Para pacientes portadores de doença hepática não compensada, recomenda-se o tratamento com esquema 
+      alternativo: estreptomicina, etambutol e levofloxacina. São previstas 60 doses de estreptomicina, podendo-se 
+      não aplicar este medicamento aos finais de semana.
+    </p>
+
+
+    <!-- TABELA 3 -->
+    <h2> QUADRO 3 </h2>
+<p>Quadro 3 - Doses e efeitos adversos mais relevantes dos medicamentos para TB.</p>
+
+<ion-grid>
+	<ion-row>
+		<ion-col><strong></strong></ion-col>
+		<ion-col class="col"><strong>Rifampicina</strong></ion-col>
+		<ion-col class="col"><strong>Isoniazida</strong></ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col"><strong>Clearance creatinina 50-90</strong></ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col"><strong>Clearance creatinina 10-50</strong></ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col"><strong>Clearance creatinina <10</strong></ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Hemodiálise</strong></ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+		<ion-col class="col conteudo">Fazer a dose pós diálise</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Monitorar efeitos adversos</strong></ion-col>
+		<ion-col class="col conteudo">Hepatotoxi-<br>cidade nefrite intersticial, tromboci-<br>topenia, leucopenia, eosino- filia, anemia hemo- lítica, neutropenia, vasculite</ion-col>
+		<ion-col class="col conteudo">Hepatotoxi-<br>cidade, vasculite, alterações neuros-<br>sensoriais</ion-col>
+	</ion-row>
+
+	
+</ion-grid>
+<br>
+<br>
+<ion-grid>
+	<ion-row>
+		<ion-col><strong></strong></ion-col>
+		<ion-col class="col"><strong>Pirazinamida</strong></ion-col>
+		<ion-col class="col"><strong>Etambutol</strong></ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col"><strong>Clearance creatinina 50-90</strong></ion-col>
+		<ion-col class="col conteudo">Como quadro 1</ion-col>
+		<ion-col class="col conteudo">Como quadro 1</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Clearance creatinina 10-50</strong></ion-col>
+		<ion-col class="col conteudo">Ajuste não necessário</ion-col>
+		<ion-col class="col conteudo">A cada 24-36 horas</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Clearance creatinina <10</strong></ion-col>
+		<ion-col class="col conteudo">Dias alternados</ion-col>
+		<ion-col class="col conteudo">Dias alternados</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Hemodiálise</strong></ion-col>
+		<ion-col class="col conteudo">Dias alternados, fazer a dose pós diálise</ion-col>
+		<ion-col class="col conteudo">15mg/kg dias alternados, fazer a dose pós diálise</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Monitorar efeitos adversos</strong></ion-col>
+		<ion-col class="col conteudo">Hepatotoxi-<br>cidade, artralgia, mialgia, , rabdomiólise<br>ou<br>mioglobiunúria<br>ou<br>insuficiência renal</ion-col>
+		<ion-col class="col conteudo">Neurite óptica</ion-col>
+	</ion-row>
+
+</ion-grid>
+
+<ion-grid>
+	<ion-row>
+		<ion-col><strong></strong></ion-col>
+		<ion-col class="col"><strong>Estreptomicina</strong></ion-col>
+		<ion-col class="col"><strong>Levofloxacina</strong></ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col"><strong>Clearance creatinina 50-90</strong></ion-col>
+		<ion-col class="col conteudo">15mg/kg<br>1x dia</ion-col>
+		<ion-col class="col conteudo">750 mg / dia</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Clearance creatinina 10-50</strong></ion-col>
+		<ion-col class="col conteudo">15mg/kg a cada 24-72h</ion-col>
+		<ion-col class="col conteudo">Dias alternados</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Clearance creatinina <10</strong></ion-col>
+		<ion-col class="col conteudo">15mg/kg a cada 72-96h</ion-col>
+		<ion-col class="col conteudo">750mg, depois 500mg dias alternados</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Hemodiálise</strong></ion-col>
+		<ion-col class="col conteudo">15mg/kg a cada 72-96h e dose extra 7,5 mg/kg pós diálise</ion-col>
+		<ion-col class="col conteudo">750mg, depois 500mg dias alternados</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Monitorar efeitos adversos</strong></ion-col>
+		<ion-col class="col conteudo">Hipoacusia, vertigem, nistagmo</ion-col>
+		<ion-col class="col conteudo">Náusea, diarreia (associada a C. difficile), tendinopatia, artralgia, mialgia, parestesias, confusão mental, alucinações.</ion-col>
+	</ion-row>
+
+</ion-grid>
+
+<ion-grid>
+	<ion-row>
+		<ion-col class="col"><strong></strong></ion-col>
+		<ion-col class="col"><strong>Rifabutina</strong></ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col"><strong>Clearance creatinina 50-90</strong></ion-col>
+		<ion-col class="col conteudo">Como quadro 2</ion-col>
+  </ion-row>
+  
+	<ion-row>
+
+		<ion-col >
+			<ion-row ><ion-col class="subcol"><strong>Clearance creatinina 10-50</strong></ion-col></ion-row>
+      <ion-row ><ion-col class="subcol"><strong>Clearance creatinina</strong></ion-col></ion-row>
+      <ion-row ><ion-col class="subcol"><strong>Hemodiálise</strong></ion-col></ion-row>
+		</ion-col>
+
+		<ion-col class="col conteudo" text-center>Clearance < 30: recomenda-se diminuir a dose pela metade. No entanto,	rifabutina disponível somente em	cápsulas.</ion-col>
+
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="col content"><strong>Monitorar efeitos adversos</strong></ion-col>
+		<ion-col class="col conteudo">Rash, neutropenia, leucopenia, trombocitopenia, náusea, dor abdominal, uveíte</ion-col>
+	</ion-row>
+
+</ion-grid>
+
+
+<!-- FIM DA TABELA 3-->
+
+
+    <p>
+      &ensp; É importante estar atento à ocorrência de efeitos adversos aos medicamentos, monitorando transaminases, 
+      função renal e hemograma periodicamente.
+    </p>
+    
+    <p>
+      &ensp; O manejo das reações adversas depende da sua gravidade e dos medicamentos a elas associadas. Nos quadros 
+      graves, sugere-se a suspensão de todo o esquema, com sua reintrodução escalonada, droga a droga, 
+      assim que possível.
+    </p> 
+    
+    <p>
+      &ensp; Nas situações de resistência ou intolerância a uma ou mais drogas do esquema básico, cabe discutir caso 
+      a caso; em princípio, no entanto, pode- se seguir as orientações constantes no quadro abaixo.
+    </p>
+    
+
+
+    
+    <!-- TABELA 4 -->
+    <h2> QUADRO 4 </h2>
+
+	<p> Quadro 4 - Condutas na possibilidade de se utilizar um fármaco antiTB </p>
+	<ion-grid>
+		<ion-row>
+			<ion-col class="col"><strong>Na impossibilidade de usar</strong></ion-col>
+			<ion-col class="col"><strong>Opções possíveis</strong></ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col class="col conteudo">Rifamicina (rifampicina ou rifabutina), por resistência</ion-col>
+			<ion-col class="col conteudo">Discutir caso a caso</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col class="col conteudo">Rifamicina (rifampicina ou rifabutina), por intolerância ou monorresistência confirmada</ion-col>
+			<ion-col class="col conteudo">2HZES/10 HE*<br>
+					A estreptomicina  poderá  ser substituída
+					por uma Fluoroquinolona, que será
+					utilizada nas duas fases do tratamento</ion-col>
+		</ion-row>
+		
+		<ion-row>
+			<ion-col class="col conteudo">Isoniazida (na monorresistência ou intolerância)</ion-col>
+			<ion-col class="col conteudo">2RZES/4RE</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col class="col conteudo">Pirazinamida (na monorresistência ou intolerância)</ion-col>
+			<ion-col class="col conteudo">2RZES/4RE</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col class="col conteudo">Etambutol (na monorresistência ou intolerância)</ion-col>
+			<ion-col class="col conteudo">2RZES/4RE</ion-col>
+		</ion-row>
+
+	</ion-grid>
+
+
+<!-- FIM DA TABELA 4-->
+
+    <p class="texto_negrito"> &ensp; Momento oportuno da TARV </p>
+    <p> 
+      &ensp; A introdução da TARV deve ser feita de forma oportuna, devendo-se aguardar pelo menos duas semanas após 
+      o início do tratamento da TB.
+    </p>
+    <p>
+      &ensp; Para pacientes com imunossupressão severa (CD4 abaixo de 200 céls/µL), a TARV deve ser instituída ao 
+      final da 2ª semana de tratamento da TB.
+    </p>
+    <p>
+      &ensp; Para pacientes com CD4 ≥ 200 céls/µL, a TARV deverá ser iniciada após o término da fase intensiva do 
+      tratamento da TB (após 08 semanas).
+    </p>
+
+    <p class="texto_negrito"> &ensp; Esquemas antirretrovirais e tratamento de TB7 </p>
+    <p> 
+      &ensp; Para pacientes que iniciam tratamento de TB, virgens de TARV ou que não estão em uso de TARV,  e desde que 
+      eventual exposição pregressa à TARV permita, deverão ser tratados com o esquema preferencial:
+    </p>
+    <p>
+      &ensp; RHZE + lamivudina +  tenofovir  +  raltegravir  (400mg  12/12h) (o raltegravir devendo ser substituído 
+      por dolutegravir ao final do tratamento da TB)
+    </p>
+    <p>
+      &ensp; Para pacientes previamente expostos à TARV ou que já se encontram em uso de TARV no diagnóstico de TB, 
+      são possíveis as combinações:
+    </p>
+    <p class="texto_secundario">
+      ✓	RHZE + esquema contendo efavirenz <br>
+      ✓	RHZE + lamivudina + tenofovir + raltegravir, dependendo do histórico de uso de ARV ou de acordo com a 
+      genotipagem. <br>
+      ✓	Rifabutina HZE + esquema contendo IP 
+    </p>
+
+
+    <p class="texto_negrito"> &ensp; Síndrome inflamatória da reconstituição imunológica </p>
+    <p>
+      &ensp; Quantomais baixaacontagemde CD4 equantomaisprecoceaintrodução de TARV, maior o risco de síndrome 
+      inflamatória da reconstituição imune (SIRI). A SIRI consiste na piora clínica e radiológica em pacientes 
+      que vinham apresentando melhora clínica e cursam com queda na carga viral e elevação de CD4. Acontece em 
+      até três meses após a introdução da TARV e dura, em média, 02 meses. Pode cursar com febre, retorno da 
+      tosse, aumento e fistulização de gânglios, piora radiológica, entre outros sinais/ sintomas.
+    </p>
+    <p>
+      &ensp; O quadro é em geral autolimitado, com benefício de uso de corticoides para os quadros mais exacerbados. 
+      A mortalidade por SIRI é baixa e em geral relacionada a manifestações no sistema nervoso central (SNC), 
+      com hidrocefalia e herniação. Por este motivo, recomenda-se que a introdução de TARV nos pacientes com TB 
+      em SNC seja postergada por dois meses, até o final da fase intensiva do tratamento de TB.
+    </p>
+    
+    
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-icon button class="botao_esquerda" name="md-arrow-round-back" (click)="goToTbhiv_6()"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

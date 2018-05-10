@@ -1,0 +1,55 @@
+<!--
+  Generated template for the ConfiguracaoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+  <ion-navbar>
+    <button ion-button icon-only menuToggle left>
+      <ion-icon name="menu"></ion-icon>
+    </button> 
+    <ion-title>Configurações</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  
+  <!-- CONFIGURAÇÃO DO TAMANHO DA FONTE -->
+  <ion-list>
+    <ion-list-header class="titulo_configuracao">
+      Escolha o tamanho da fonte: 
+    </ion-list-header>
+    <ion-item>
+      <!-- 
+        snaps= true, deixa o valor não contínuo visualmente. false, deixa o valor contínuo apenas visualmente. 
+        pin= true, mostra o valor atual do intervalo em tempo real. false, não mostra nada do valor "selecionado".
+        step é o tamanho do intervalo que os valores irão "pular".
+        ngModel é uma ferramenta do angular que permite o "tamanhoDaFonte" ser utilizado como se fosse uma variável.
+      -->
+      <ion-range min="8" max="32" step="4" snaps="true" pin="true" [(ngModel)]="tamanhoDaFonte">
+        <ion-label range-left class="big-text">a</ion-label>
+        <ion-label range-right>A</ion-label>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <!-- ngStyle é do angular e altera o estilo css em tempo real, ou seja, com mudança de valores em tempo de execução. -->
+  <p [ngStyle]="{'font-size': tamanhoDaFonte + 'px'}">
+      Tamanho do texto teste.
+  </p>
+
+  <button ion-button round (click)="salvarConfiguracoes(tamanhoDaFonte, temaEscolhido)"> 
+    Salvar
+  </button>
+
+  <button ion-button round (click)="toggleAppTheme()"> 
+    {{tema}}
+  </button>
+  
+</ion-content>
+    

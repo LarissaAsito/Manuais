@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button ion-button icon-only class="botaoHeader" (click)="goToTbhivSubtitulos()"> 
+          <ion-icon name="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Guia TB/HIV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+<ion-content padding [ngStyle]="{'font-size': fontSize + 'px', 'background-color': backgroundColor, 'color': fontColor }">
+    <p class="titulo_h2">Introdução</p>
+    <p> 
+      <!-- &ensp; ocupa o tamanho de dois espaços normais. -->
+      &ensp; Este guia foi idealizado para ser um material de fácil acesso e manuseio, para que o profissional de saúde 
+      do serviço especializado em atendimento às pessoas vivendo com HIV (PVH) tenha as informações básicas sobre 
+      prevenção, rastreamento, diagnóstico e tratamento de tuberculose (TB) nas PVH, seu impacto e sua importância 
+      na cadeia de transmissão da doença.
+    </p>
+
+    <b> A Coinfecção TB/HIV: </b>
+    <p>
+      &ensp; A TB, doença infectocontagiosa causada pelo Mycobacterium tuberculosis (Mtb), é altamente prevalente entre 
+      a população infectada pelo HIV, principalmente em países com alta carga de tuberculose, como o Brasil. Em nosso 
+      país, a TB é a principal causa de óbito, por doença definida, em PVH. Isto se deve ao fato de que a defesa contra 
+      o desenvolvimento da doença TB está diretamente relacionada à imunidade celular preservada, justamente o 
+      mecanismo que é progressivamente destruído pelo HIV. Pessoas infectadas pelo Mtb podem desenvolver sinais e 
+      sintomas da doença (tuberculose doença ou TB ativa) logo após a infecção, adoecer muito tempo depois da 
+      primoinfecção, ou mesmo nunca ter tuberculose ativa. A persistência do bacilo no organismo, sob forma latente, 
+      é a chamada infecção tuberculosa latente, ou infecção latente por TB (ILTB). Neste período de latência, a pessoa 
+      infectada é assintomática e não transmite TB. Quando comparadas a pessoas com uma boa performance imunológica, 
+      o risco da infecção latente se manifestar como doença ativa é 20 a 30 vezes maior em PVH.1 E quanto mais severo 
+      o comprometimento imunológico do individuo, menor a capacidade de resposta, de modo que pacientes com linfócitos 
+      TCD4 inferior a 200 células/µL apresentam risco seis vezes maior de adoecer por TB do que aqueles com CD4 acima 
+      de 500.
+    </p>
+
+    <p>
+      &ensp; No estado de São Paulo, com 78,7% de pacientes com TB testados para HIV, a coinfecção em 2015 foi de 8,3%.3 
+      Análise dos dados da coorte desse ano mostrou que, entre os 2096 casos de TB em HIV+, 469 (22,4%) foram a 
+      óbito durante o tratamento de TB. O óbito, segundo alguns estudos mostraram, ocorre nos primeiros dois meses 
+      de tratamento, razão pela qual a rapidez no diagnóstico de TB é fundamental, bem como é fundamental o 
+      diagnóstico de HIV entre aqueles com TB.       
+    </p>
+
+    <p>
+      &ensp; A boa notícia é que existem armas importantes e eficientes que podem evitar que a doença ativa se 
+      manifeste: a terapia antirretroviral (TARV) e o tratamento da infecção latente por TB. Em relação à TARV 
+      já foi demonstrado, em estudo conduzido no Brasil na década passada e sob condições programáticas, que o 
+      tratamentoparao HIVimpactadiretamente no adoecimento por TB, com uma redução de 80% nos pacientes tratados 
+      com terapia antirretroviral de alta potência (HAART) quando comparados com os pacientes virgens de TARV.4 
+      Outro estudo, também conduzido em nosso país, mostrou que a combinação das duas estratégias - tratamento da 
+      ILTB e TARV - reduz significantemente a incidência de tuberculose, tanto nos pacientes mais imunologicamente 
+      comprometidos quanto naqueles nos estágios mais precoces da infecção pelo HIV.
+    </p>
+
+    
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-icon button class="botao_direita" name="md-arrow-round-forward" (click)="goToTbhiv_2()"></ion-icon>
+  </ion-toolbar>
+</ion-footer>
+  

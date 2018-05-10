@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button ion-button icon-only class="botaoHeader" (click)="goToTbhivSubtitulos()"> 
+          <ion-icon name="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Guia TB/HIV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding [ngStyle]="{'font-size': fontSize + 'px', 'background-color': backgroundColor, 'color': fontColor }">
+    <p class="titulo_h2">Rastreamento de TB ativa em PVH</p>
+
+    <p>
+      <!-- &ensp; ocupa o tamanho de dois espaços normais. -->
+      &ensp; <b>POR QUE:</b>
+      PVH tem risco aumentado para adoecer por TB, que é a principal causa de morte nesta população. O óbito na 
+      coinfecção TB-HIV ocorre principalmente no início do tratamento da TB, tornando urgente o diagnóstico e o 
+      início de tratamento.        
+    </p>
+
+    <p>
+      &ensp; <b>QUANDO:</b>
+      Em todas as oportunidades, para todas PVH, independentemente de tratamento prévio para TB. O  questionamento 
+      sobre febre, tosse, perda de peso ou sudorese noturna deve ser feito em todas as visitas à unidade, por 
+      qualquer profissional de saúde.
+    </p>
+
+    <p>
+      &ensp; <b>ONDE:</b>
+      As perguntas-chave acima  podem  fazer  parte  da  avaliação de  risco  nas  triagens,  por  exemplo,  
+      seguida  de  encaminhamento para atendimento médico quando necessário.
+    </p>
+
+    <p>
+      &ensp; <b>COMO FAZÊ-LO:</b>
+      Ativamente questionar sinais ou sintomas sugestivos de TB ativa: febre, tosse, perda de peso ou sudorese 
+      noturna. Na presença de quaisquer destes sintomas, ou qualquer outro que sugira TB, iniciar investigação, 
+      solicitando exames específicos, a depender da sintomatologia e/ou órgão acometido:
+    </p>
+
+    <p class="texto_secundario">
+      ✓ RX de tórax, sempre <br>
+      ✓	Teste rápido molecular para TB (TRM-TB)6: método molecular que detecta DNA do Complexo Mtb e cepas resistentes à rifampicina, 
+      pela técnica de reação em cadeia da polimerase (PCR) em tempo real. Demanda somente 01 amostra de escarro e cerca de duas horas 
+      para resultado. Como o teste identifica material genético de bacilo vivo ou morto, não está indicado para acompanhamento do tratamento 
+      de TB e nem para diagnóstico de casos de retratamento (recidivas e reingressos após abandono).
+    </p>
+
+    <p class="texto_terciario">
+      Indicações: <br>
+      •	Prioritariamente, para diagnóstico de TB pulmonar e laríngea, em materiais respiratórios: escarro, escarro induzido, lavado 
+      broncoalveolar, secreção traqueal. <br>
+      •	Em pacientes com suspeita de falência ao esquema básico, para identificação precoce de resistência à rifampicina. <br>
+      •	Nos casos de retratamento, para triagem de resistência à rifampicina. <br>
+      •	Pode ser utilizado para diagnóstico de algumas formas extra-pulmonares em: líquor, material de gânglios linfáticos e outros tecidos, 
+      em laboratórios especiais e através de técnicas específicas de preparo. <br>
+    </p>
+
+    <p class="texto_terciario">
+      Observações: <br>
+      •	Concomitantemente à solicitação de TRM, deve-se solicitar também cultura, identificação e teste de sensibilidade para os demais 
+      fármacos, tanto para casos novos de TB quanto para retratamentos, para qualquer forma de tuberculose.
+    </p>
+
+    <p class="texto_secundario">
+      ✓	Para amostras como sangue e aquelas oriundas de punções e biópsias - e caso não tenha sido feito o TRM-TB -, solicitar baciloscopia 
+      (quando indicado), cultura para micobactérias, identificação e teste de sensibilidade <br>
+      ✓	Outros exames de imagem (ultrassonografia, tomografia computadorizada), a depender de cada caso. <br>
+      ✓	Anatomo-patológico <br> 
+    </p>
+
+    
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-icon button class="botao_esquerda" name="md-arrow-round-back" (click)="goToTbhiv_1()"></ion-icon>
+      <ion-icon button class="botao_direita" name="md-arrow-round-forward" (click)="goToTbhiv_3()"></ion-icon>
+  </ion-toolbar>
+</ion-footer>
+  

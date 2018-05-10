@@ -6,6 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ConfiguracaoPageModule } from '../pages/configuracao/configuracao.module';
+import { PrevcombSubtitulosPageModule } from '../pages/prevcomb-subtitulos/prevcomb-subtitulos.module';
+import { TbhivSubtitulosPageModule } from '../pages/tbhiv-subtitulos/tbhiv-subtitulos.module';
+import { ConfiguracoesProvider } from '../providers/configuracoes/configuracoes'; //Provider importado.
+import { HttpClientModule } from '@angular/common/http'; //"Auxiliar" de provider importado.
+import { SifilisSubtitulosPageModule } from '../pages/sifilis-subtitulos/sifilis-subtitulos.module';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +21,12 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ConfiguracaoPageModule,
+    PrevcombSubtitulosPageModule,
+    TbhivSubtitulosPageModule,
+    SifilisSubtitulosPageModule,
+    HttpClientModule //"Auxiliar" de provedor adicionado.
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -24,7 +36,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ConfiguracoesProvider
   ]
 })
 export class AppModule {}

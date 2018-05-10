@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button ion-button icon-only class="botaoHeader" (click)="goToTbhivSubtitulos()"> 
+          <ion-icon name="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Guia TB/HIV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding [ngStyle]="{'font-size': fontSize + 'px', 'background-color': backgroundColor, 'color': fontColor }">
+    <p class="titulo_h2">Medidas de controle de infecção</p>
+
+    <p>
+      <!-- &ensp; ocupa o tamanho de dois espaços normais. -->
+      &ensp; Deve-se priorizar o atendimento a pacientes bacilíferos ou sintomáticos respiratórios  com  suspeita  de  TB,  
+      preferencialmente  usando máscaras cirúrgicas, sua acomodação em salas de espera e consultórios bem 
+      ventilados, com fluxo de ar para o exterior da unidade e, se possível, com entrada de luz do sol, são 
+      medidas que contribuem para minimizar o risco de transmissão de TB na unidade de saúde.
+    </p>
+
+    <p>
+      &ensp; Os profissionais de saúde devem utilizar máscaras N95 sempre que indicado, em especial nos quartos de pacientes 
+      bacilíferos ou em investigação de TB pulmonar e nas salas de broncoscopia. As máscaras devem estar sempre bem 
+      ajustadas para serem eficazes e só devem ser retiradas quando o profissional sair da área de risco.
+    </p>
+
+    <p> 
+      &ensp; Ainda para proteção dos profissionais de saúde, recomenda-se que também eles sejam anualmente rastreados 
+      para ILTB, com realização de PPD anual para os não reatores e tratamento de ILTB quando indicado. A pronta 
+      suspeição de TB ativa neste grupo também é fundamental para a proteção individual e coletiva. 
+    </p>
+
+    
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-icon button class="botao_esquerda" name="md-arrow-round-back" (click)="goToTbhiv_5()"></ion-icon>
+      <ion-icon button class="botao_direita" name="md-arrow-round-forward" (click)="goToTbhiv_7()"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,15 @@
+.dark-theme {
+    ion-content, ion-content padding, ion-item, ion-list-header{
+      background-color: #090f2f;
+      color: #fff;
+    }
+   
+    .header .toolbar-title {
+      color: #fff;
+    }
+   
+    .header .toolbar-background {
+      border-color: #ff0fff;
+      background-color: #090f2f;
+    }
+}  

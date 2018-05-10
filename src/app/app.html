@@ -1,1 +1,60 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="myContent" [class]="selectedTheme">
+    <!--<ion-content>
+      <ion-list>
+        <ion-item>ola</ion-item>
+        <ion-item>manual</ion-item>
+      </ion-list>
+    </ion-content>-->
+    <ion-content class="card-background-page">
+        <!--<ion-list>
+            <ion-list-header>
+                Adjust Text
+            </ion-list-header>
+            <ion-item>
+                <ion-range min="-100" step="10" snaps="true" [(ngModel)]="text">
+                <ion-label range-left class="small-text">A</ion-label>
+                <ion-label range-right>A</ion-label>
+                </ion-range>
+            </ion-item>
+        </ion-list>-->
+        <ion-list> 
+            <!--<ion-item menuToggle (click)="goToHome()">   
+                
+                <img src="assets/images/home-icone.png" height="30px" width="30px"/>
+            
+                    <ion-icon button right md="md-settings"></ion-icon>
+                
+                <button ion-button icon-only right>
+                    <ion-icon button md="md-home"></ion-icon>
+                </button> 
+        
+            </ion-item>-->
+            
+                <ion-icon button class="botao_esquerda" name="home"     menuToggle (click)="goToHome()"></ion-icon>
+                <ion-icon button class="botao_direita"  name="settings" menuToggle (click)="goToConfig()"></ion-icon>
+            
+            <ion-item  menuToggle (click)="goToSifilisSubtitulos()"> 
+                <ion-card style="width: 150px;">
+                    <img src="assets/images/icone-sifilis-v2.png" style="width: 150px;"/>
+                    <!--<div class="card-title">Amsterdam</div>
+                    <div class="card-subtitle">64 Listings</div>-->
+                </ion-card>
+             </ion-item>
+             <ion-item menuToggle (click)="goToTbhivSubtitulos()">
+                <ion-card style="width: 150px;">
+                    <img src="assets/images/icone-guia-turb-v2.png"  style="width: 150px;"/>
+                    <!--<div class="card-title">San Francisco</div>
+                    <div class="card-subtitle">72 Listings</div>-->
+                </ion-card>
+            </ion-item>
+            <ion-item menuToggle (click)="goToPrevcombSubtitulos()">
+                <ion-card style="width: 150px;">
+                    <img src="assets/images/icone-prev-comb-v2.png" style="width: 150px;"/>
+                    <!--<div class="card-title">Madison</div>
+                    <div class="card-subtitle">28 Listings</div>-->
+                </ion-card>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav #myContent [root]="rootPage" [class]="selectedTheme"></ion-nav>

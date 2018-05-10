@@ -1,0 +1,24 @@
+page-prevcomb-2 {
+    h2{
+        color: red;
+    }
+    p.texto_negrito{
+        font-weight: bold;
+    }
+    p.texto_secundario{
+        padding-left: 10px;
+    }
+    p.texto_terciario{
+        padding-left: 20px;
+    }
+    .botao_direita{
+        float:right;
+        margin-right: 5%;
+        font-size: 200%;
+    }
+    .botao_esquerda{
+        float:left;
+        margin-left: 5%;
+        font-size: 200%;
+    }
+}

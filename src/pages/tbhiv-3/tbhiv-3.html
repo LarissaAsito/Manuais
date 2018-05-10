@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button ion-button icon-only class="botaoHeader" (click)="goToTbhivSubtitulos()"> 
+          <ion-icon name="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Guia TB/HIV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding [ngStyle]="{'font-size': fontSize + 'px', 'background-color': backgroundColor, 'color': fontColor }">
+    <p class="titulo_h2"h2>Rastreamento de infecção latente da TB em PVH</p>
+
+    <p>
+      <!-- &ensp; ocupa o tamanho de dois espaços normais. -->
+      &ensp; <b>POR QUE:</b> 
+      o tratamento da ILTB diminui o risco de TB ativa.
+    </p>
+
+    <p>
+      &ensp; <b>QUANDO:</b>
+      para todos os pacientes assintomáticos
+    </p>
+    <p class="texto_secundario">
+      ✓	No início do seguimento, <br>
+      ✓	Na reconstituição imunológica e <br>
+      ✓	Anualmente, para os pacientes com teste tuberculínico negativo e sem tratamento prévio para ILTB ou TB ativa.
+    </p>
+    
+    <p>
+      &ensp; <b>ONDE:</b>
+      nas consultas médicas
+    </p>
+
+    <p>
+      &ensp; <b>COMO FAZÊ-LO:</b>
+    </p>
+
+    <p class="texto_secundario">
+      ✓	Certificar-se de que o paciente é assintomático. <br>
+      ✓	Solicitar: RX de tórax e prova tuberculínica com derivado protéico purificado (PPD) como exames de 
+      rastreamento inicial, lembrando que: <br>
+    </p>
+    <p class="texto_terciario">
+      •	se a contagem de CD4 for baixa, PPD abaixo de 5mm (não reator) deverá ser repetido quando da recuperação 
+      imunológica <br>
+      •	com qualquer contagem de CD4, PPD não reator deverá ser repetido anualmente <br>
+      •	se PPD atual ou pregresso ≥ 5mm, não há necessidade de se repetir este teste; prosseguir conduta para 
+      tratamento de ILTB <br>
+    </p>
+    <p class="texto_secundario">
+      ✓	Quando disponível, o teste de liberação de interferon-gama (IGRA) pode substituir o PPD.
+    </p>
+     
+    
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-icon button class="botao_esquerda" name="md-arrow-round-back" (click)="goToTbhiv_2()"></ion-icon>
+      <ion-icon button class="botao_direita" name="md-arrow-round-forward" (click)="goToTbhiv_4()"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

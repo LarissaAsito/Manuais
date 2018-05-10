@@ -1,0 +1,34 @@
+page-tbhiv-7 {
+    h2{
+        color: red;
+    }
+
+    .col {
+        border-block-start: 0ex;
+        border-block-start-width: 0ex;
+        border-block-end-width: 0ex;
+        border-block-end: 0ex;
+        background-color: rgba(0, 0, 255, 0.384);
+        padding: 2px;
+        position: relative;
+        margin: 2px;
+        font-size: 13px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .conteudo.col {
+        font-size: 13px;
+        background-color: rgba(0, 0, 255, 0.226)
+    }
+
+    .subcol {
+        background-color: #9d9dff;
+    }
+    
+    .row {
+        text-align: center;
+        max-height: 100%;
+    }
+}

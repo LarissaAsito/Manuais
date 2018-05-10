@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button ion-button icon-only class="botaoHeader" (click)="goToTbhivSubtitulos()"> 
+          <ion-icon name="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Guia TB/HIV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding [ngStyle]="{'font-size': fontSize + 'px', 'background-color': backgroundColor, 'color': fontColor }">
+  <p class="titulo_h2">Tratamento da infecção latente da tuberculose</p>
+
+  <p>
+    <!-- &ensp; ocupa o tamanho de dois espaços normais. -->
+    &ensp; Somente após ter sido descartada TB ativa deve-se instituir tratamento para ILTB. O tratamento de ILTB não 
+    é urgência, e enquanto não  houver dados clínicos e laboratoriais que assegurem que o paciente não está 
+    doente com tuberculose ativa, não se deve iniciar o tratamento de ILTB.    
+  </p>
+
+  <p> &ensp; Para tanto, observar se:</p>
+  <p class="texto_secundario"> 1.	Radiografia de tórax normal E: </p>
+  <p class="texto_terciario">
+    •	PPD ≥ 5mm OU; <br>
+    •	contatos intradomiciliares ou institucionais de pacientes bacilíferos, independentemente do PPD; OU <br>
+    •	PPD &lsaquo; <!-- Sinal de < --> 5mm com registro documental de ter tido PPD ≥ 5mm e não submetido a tratamento 
+    de TB ativa ou latente, na ocasião.
+  </p>
+  <p class="texto_secundario"> 
+    2.	Radiografia de tórax com presença de cicatriz radiológica de  TB, sem tratamento anterior para TB 
+    (afastada possibilidade de TB ativa por meio de exames de escarro, radiografias anteriores e, se necessário, 
+    tomografia computadorizada de tórax), independentemente do resultado do PPD.
+  </p>
+     
+  <p>
+    &ensp; Preenchidos os critérios acima, iniciar isoniazida 10mg/kg dia, na dose máxima de 300mg /dia, por 6 a 9 meses.
+  </p>
+  
+  <p> 
+    &ensp; Consideram-se completos os tratamentos com 180 tomadas ao longo de 09 meses ou 270 tomadas ao longo de 12 meses.
+  </p>
+  
+  
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-icon button class="botao_esquerda" name="md-arrow-round-back" (click)="goToTbhiv_3()"></ion-icon>
+      <ion-icon button class="botao_direita" name="md-arrow-round-forward" (click)="goToTbhiv_5()"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

@@ -14,3 +14,84 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.card-background-page {
+    
+    ion-card {
+    position: relative;
+    text-align: center;
+    }
+
+    .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    }
+
+    .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+    }
+
+    .botao_esquerda{
+        padding:5%;
+        padding-left: 10%;
+        font-size: 200%;
+    }
+
+    .botao_direita{
+        float:right;
+        padding:5%;
+        padding-right: 10%;
+        font-size: 200%;
+    }
+
+    
+}
+
+.menu-inner{
+    width:210px;
+}
+
+.titulo_configuracao{
+    font-size: 18px; //Equivalente a 14pt.
+    font-weight: bold; 
+    color: black;
+}
+
+.titulo_h2{
+    font-size: 21px; //Equivalente a 16pt.
+    font-weight: bold; 
+    color: blue;
+}
+
+// ---------------- Estilos das páginas tbhiv ---------------------
+.texto_negrito{
+    font-weight: bold;
+}
+.texto_secundario{
+    padding-left: 10px;
+}
+.texto_terciario{
+    padding-left: 20px;
+}
+.botao_direita{
+    float:right;
+    margin-right: 5%;
+    font-size: 200%;
+}
+.botao_esquerda{
+    float:left;
+    margin-left: 5%;
+    font-size: 200%;
+}
+
+.botaoHeader {
+    color: black;
+}

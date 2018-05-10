@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button ion-button icon-only class="botaoHeader" (click)="goToTbhivSubtitulos()"> 
+          <ion-icon name="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Guia TB/HIV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding [ngStyle]="{'font-size': fontSize + 'px', 'background-color': backgroundColor, 'color': fontColor }">
+
+    <p class="titulo_h2">Priorização de atendimento</p>
+
+    <p>
+      <!-- &ensp; ocupa o tamanho de dois espaços normais. -->
+      &ensp; Idealmente, o tratamento da coinfecção TB-HIV deve ser feito pela mesma equipe e no mesmo local, de 
+      forma integrada.
+    </p>
+
+    <p>
+      &ensp; O tratamento da TB ativa é urgente e imediato ao diagnóstico. Em casos graves, pode inclusive ser instituído empiricamente, após coleta 
+      de todos os materiais cabíveis para baciloscopia, TRM-TB, cultura e exame histopatológico.
+    </p>
+
+    <p>
+      &ensp; Pacientes que chegam ao serviço já com diagnóstico de TB devem ser atendidos de forma prioritária e, caso tratamento de TB ainda não 
+      iniciado, isto deve acontecer já na primeira visita ao serviço.
+    </p>
+
+    <p>
+      &ensp; Pacientes com TB e HIV devem ser reavaliados periodicamente, idealmente em duas semanas após o início do tratamento e em tempo não 
+      inferior a 30 dias subsequentemente. Quando necessário, deverão ser reavaliados em intervalos menores, de acordo com as necessidades 
+      de cada caso.
+    </p>  
+
+    
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-icon button class="botao_esquerda" name="md-arrow-round-back" (click)="goToTbhiv_4()"></ion-icon>
+      <ion-icon button class="botao_direita" name="md-arrow-round-forward" (click)="goToTbhiv_6()"></ion-icon>
+  </ion-toolbar>
+</ion-footer>
+    
