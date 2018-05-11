@@ -22,9 +22,7 @@ export class Tbhiv_6Page {
 
   // Variáveis.
   fontSize: number = 16; //Valor padrão do tamanho da fonte em 'px'. (16 px = 12 pt)
-  backgroundColor: string = 'white'; //Valor padrão da cor de fundo.
-  fontColor: string = 'black'; //Valor padrão da cor da fonte.
-
+  
   // Funções.
   constructor(
     public navCtrl: NavController, 
@@ -36,8 +34,6 @@ export class Tbhiv_6Page {
     var temp = JSON.parse(this.configProvider.getConfigData()); 
 
     this.fontSize = temp.tamanhoDoTexto;
-    this.backgroundColor = temp.corDaFonte;
-    this.fontColor = temp.corDeFundo;
   }
 
   ionViewDidLoad() {
